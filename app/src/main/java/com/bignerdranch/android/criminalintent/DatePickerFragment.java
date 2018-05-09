@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.DatePicker;
 
+
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -66,6 +67,7 @@ public class DatePickerFragment extends DialogFragment {
                             }
                         })
                 .setNegativeButton(android.R.string.no,null)
+                .setCancelable(true)
                 .create();
     }
 
