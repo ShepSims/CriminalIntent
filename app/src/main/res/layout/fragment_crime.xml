@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:text="@string/crime_solved_label"/>
 
+    <!--
     <android.support.constraint.ConstraintLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -67,6 +68,7 @@
             tools:layout_conversion_absoluteHeight="48dp"
             tools:layout_conversion_absoluteWidth="104dp" />
     </android.support.constraint.ConstraintLayout>
+    -->
 
 
 

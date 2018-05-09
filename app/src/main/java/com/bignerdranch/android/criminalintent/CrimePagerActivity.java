@@ -62,7 +62,7 @@ public class CrimePagerActivity extends AppCompatActivity {
             }
         }
 
-        mFirstButton = (Button) findViewById(R.id.first_crime);
+        /*mFirstButton = (Button) findViewById(R.id.first_crime);
         mFirstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,9 +74,9 @@ public class CrimePagerActivity extends AppCompatActivity {
         mLastButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mViewPager.setCurrentItem(mCrimes.size());
+                mViewPager.setCurrentItem(mCrimes.size()-1);
             }
-        });
+        });*/
     }
 
 }
