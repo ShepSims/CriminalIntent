@@ -66,7 +66,7 @@ public class CrimePagerActivity extends AppCompatActivity {
         }
 
         public void lastItem(){
-        mViewPager.setCurrentItem(mCrimes.size()-1);
+            mViewPager.setCurrentItem(mCrimes.size()-1);
         }
 
 }
