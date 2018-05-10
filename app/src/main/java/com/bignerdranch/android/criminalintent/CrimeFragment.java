@@ -113,7 +113,7 @@ public class CrimeFragment extends Fragment {
         });
 
         mTimeButton = v.findViewById(R.id.crime_time);
-        mTimeButton.setText(android.text.format.DateFormat.format("H:MM a", mCrime.getDate()));
+        mTimeButton.setText(android.text.format.DateFormat.format("h:mm a", mCrime.getDate()));
         mTimeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -175,6 +175,6 @@ public class CrimeFragment extends Fragment {
     }
 
     private void updateTime() {
-        mTimeButton.setText(android.text.format.DateFormat.format("H:MM a", mCrime.getDate()));
+        mTimeButton.setText(android.text.format.DateFormat.format("h:mm a", mCrime.getDate()));
     }
 }
