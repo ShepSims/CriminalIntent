@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/private/var/folders/q5/8pn4bdk92bvdn4xnl1n9lvbc0000gn/T/AppTranslocation/C2A60F5D-4837-429F-930D-4E04795D5667/d/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_delete_forever_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/content/ic_add_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,7 +33,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_delete_action" />
+                                      <entry key="outputName" value="ic_menu_add" />
                                       <entry key="theme" value="HOLO_DARK" />
                                     </map>
                                   </option>

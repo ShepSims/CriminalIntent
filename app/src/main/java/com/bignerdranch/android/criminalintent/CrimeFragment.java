@@ -151,11 +151,12 @@ public class CrimeFragment extends Fragment {
         });
 
 
+        /*
         mFirstButton = v.findViewById(R.id.first_crime);
         mFirstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((CrimePagerActivity)getActivity()).firstItem();
+                //getActivity().CrimePagerActivity.firstCrime();
             }
         });
 
@@ -163,9 +164,10 @@ public class CrimeFragment extends Fragment {
         mLastButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().CrimePagerActivity.lastCrime();
+                //getActivity().CrimePagerActivity.lastCrime();
             }
         });
+        */
         return v;
     }
 
