@@ -30,11 +30,6 @@ public class CrimeLab {
         mDatabase = new CrimeBaseHelper(mContext)
                 .getWritableDatabase();
     }
-    public void addCrime(Crime c) {
-        ContentValues values = getContentValues(c);
-
-        mDatabase.insert(CrimeDbSchema.CrimeTable.NAME, null, values);
-    }
 
     public List<Crime> getCrimes() {
         List<Crime> crimes = new ArrayList<>();
@@ -79,6 +74,21 @@ public class CrimeLab {
         mDatabase.update(CrimeDbSchema.CrimeTable.NAME, values,
                 CrimeDbSchema.CrimeTable.Cols.UUID + " = ?",
                 new String[] { uuidString });
+    }
+
+    public void addCrime(Crime c) {
+        ContentValues values = getContentValues(c);
+
+        mDatabase.insert(CrimeDbSchema.CrimeTable.NAME, null, values);
+    }
+
+    public int deleteCrime(Crime crime) {
+        String uuidString = crime.getId().toString();
+        return mDatabase.delete(
+                CrimeDbSchema.CrimeTable.NAME,
+                CrimeDbSchema.CrimeTable.Cols.UUID + " = ?",
+                new String[] { uuidString }
+        );
     }
 
     private CrimeCursorWrapper queryCrimes(String whereClause, String[] whereArgs) {
